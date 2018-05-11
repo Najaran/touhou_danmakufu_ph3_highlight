@@ -6,6 +6,9 @@
 			"include": "#comments"
 		},
 		{
+			"include": "#metas"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -32,6 +35,52 @@
 						"name": "punctuation.definition.comment.end.dnh"
 					}
 				}
+			}]
+		},
+		"metas": {
+			"patterns": [{
+				"name": "meta.preprocessor.scriptheader.touhoudanmakufu.dnh",
+				"begin": "^\\s*#TouhouDanmakufu\\b\\s*",
+				"end": "(?=(?://|/\\*))|(?<!\\\\)(?=\\n)",
+				"patterns": [{
+					"name": "meta.preprocessor.scriptheader.touhoudanmakufu.type.dnh",
+					"begin": "\\[",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.begin.bracket.square.dnh"
+						}
+					},
+					"end": "\\]",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.end.bracket.square.dnh"
+						}
+					}
+				}]
+			},
+			{
+				"name": "meta.preprocessor.scriptheader.dnh",
+				"match": "^\\s*#(ScriptVersion|ID|Title|Text|Image|System|Background|BGM|Player|ReplayName)\\b"
+			},
+			{
+				"name": "meta.preprocessor.include.dnh",
+				"begin": "^\\s*#include\\b\\s*",
+				"end": "(?=(?://|/\\*))|(?<!\\\\)(?=\\n)",
+				"patterns": [{
+					"name": "string.quoted.double.dnh",
+					"begin": "\"",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.dnh"
+						}
+					},
+					"end": "\"",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.dnh"
+						}
+					}
+				}]
 			}]
 		},
 		"keywords": {
