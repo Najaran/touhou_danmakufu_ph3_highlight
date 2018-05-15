@@ -81,6 +81,10 @@
 						}
 					}
 				}]
+			},
+			{
+				"name": "meta.preprocessor.routine.dnh",
+				"match": "^\\s*@(Initialize|Finalize|MainLoop|Loading|Event)\\b"
 			}]
 		},
 		"keywords": {
