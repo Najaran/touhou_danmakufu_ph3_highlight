@@ -60,7 +60,7 @@
 			},
 			{
 				"name": "meta.preprocessor.scriptheader.dnh",
-				"match": "^\\s*#(ScriptVersion|ID|Title|Text|Image|System|Background|BGM|Player|ReplayName)\\b"
+				"match": "^\\s*#(ScriptVersion|ID|Title|Text|Image|System|Background|BGM|Player|ReplayName|UserShotData)\\b"
 			},
 			{
 				"name": "meta.preprocessor.include.dnh",
