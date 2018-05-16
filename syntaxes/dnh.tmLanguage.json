@@ -99,6 +99,14 @@
 			{
 				"name": "keyword.operator.dnh",
 				"match": "(~|\\+|-|\\*|/|%|\\^|!|\\+\\+|--|\\.\\.|==|!=|>=|<=|>|<|&&|\\|\\||\\(\\||\\|\\))"
+			},
+			{
+				"name": "constant.language.events.embedded.dnh",
+				"match": "\\bEV_(REQUEST_(LIFE|TIMER|IS_LAST_SPELL|IS_DURABLE_SPELL|SPELL_SCORE|SPELL)|TIMEOUT|START_BOSS_STEP|END_BOSS_STEP|PLAYER_SHOOTDOWN|PLAYER_SPELL|PLAYER_REBIRTH|PAUSE_ENTER|PAUSE_LEAVE|GRAZE|HIT|GET_ITEM|DELETE_SHOT_TO_ITEM)\\b"
+			},
+			{
+				"name": "constant.language.events.user.dnh",
+				"match": "\\bEV_(USER|USER_(SYSTEM|STAGE|PLAYER|PACKAGE))\\b"
 			}]
 		},
 		"strings": {
