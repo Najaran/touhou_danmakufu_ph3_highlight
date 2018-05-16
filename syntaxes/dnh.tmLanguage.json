@@ -90,7 +90,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.dnh",
-				"match": "\\b(alternative|ascent|break|case|descent|else|function|if|in|local|loop|real|return|let|others|sub|task|times|while|yield)\\b"
+				"match": "\\b(alternative|ascent|break|case|descent|else\\s+if|else|function|if|in|local|loop|real|return|let|others|sub|task|times|while|yield)\\b"
 			},
 			{
 				"name": "constant.language.dnh",
