@@ -107,6 +107,10 @@
 			{
 				"name": "constant.language.events.user.dnh",
 				"match": "\\bEV_(USER|USER_(SYSTEM|STAGE|PLAYER|PACKAGE))\\b"
+			},
+			{
+				"name": "constant.language.bullet.embedded.dnh",
+				"match": "\\bDS_\\w+\\b"
 			}]
 		},
 		"strings": {
